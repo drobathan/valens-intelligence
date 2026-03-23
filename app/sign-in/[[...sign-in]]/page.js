@@ -2,10 +2,6 @@
 
 import { SignIn } from '@clerk/nextjs';
 
-/**
- * Sign-in page — Clerk handles the full auth flow.
- * Styled to match Valens brand via globals.css Clerk overrides.
- */
 export default function SignInPage() {
   return (
     <div
@@ -21,31 +17,12 @@ export default function SignInPage() {
     >
       {/* Logo */}
       <div style={{ marginBottom: '40px', textAlign: 'center' }}>
-        <svg
-          width="48"
-          height="42"
-          viewBox="0 0 52 44"
-          fill="none"
-          xmlns="http://www.w3.org/2000/svg"
-          style={{ display: 'block', margin: '0 auto 14px' }}
-        >
-          <polyline
-            points="2,4 13,38 24,12"
-            stroke="#C6A75E"
-            strokeWidth="3.2"
-            strokeLinecap="round"
-            strokeLinejoin="round"
-            fill="none"
-          />
-          <polyline
-            points="28,12 39,38 50,4"
-            stroke="#C6A75E"
-            strokeWidth="3.2"
-            strokeLinecap="round"
-            strokeLinejoin="round"
-            fill="none"
-          />
-        </svg>
+        {/* eslint-disable-next-line @next/next/no-img-element */}
+        <img
+          src="/logo.svg"
+          alt="Valens"
+          style={{ height: '56px', display: 'block', margin: '0 auto 14px' }}
+        />
         <div
           style={{
             fontFamily: "'Playfair Display', serif",
@@ -72,6 +49,8 @@ export default function SignInPage() {
 
       {/* Clerk Sign In Component */}
       <SignIn
+        afterSignInUrl="/dashboard"
+        afterSignUpUrl="/dashboard"
         appearance={{
           variables: {
             colorPrimary: '#C6A75E',
