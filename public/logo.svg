@@ -1,0 +1,13 @@
+<svg width="52" height="62" viewBox="0 0 52 62" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="vaGold" x1="26" y1="4" x2="26" y2="58" gradientUnits="userSpaceOnUse">
+      <stop offset="0%"   stop-color="#D9C075"/>
+      <stop offset="35%"  stop-color="#C6A75E"/>
+      <stop offset="100%" stop-color="#7A5A1E"/>
+    </linearGradient>
+  </defs>
+  <!-- V shape – left parallelogram leaning slightly right -->
+  <polygon points="2,4 18,4 22,58 6,58" fill="url(#vaGold)"/>
+  <!-- A shape – right parallelogram leaning slightly left -->
+  <polygon points="26,4 50,4 48,58 24,58" fill="url(#vaGold)"/>
+</svg>

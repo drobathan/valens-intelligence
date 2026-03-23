@@ -1,0 +1,72 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&family=Inter:wght@300;400;500;600&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --navy:         #0B1C2D;
+  --blue:         #123A6F;
+  --gold:         #C6A75E;
+  --gold-dim:     rgba(198,167,94,0.15);
+  --gold-mid:     rgba(198,167,94,0.40);
+  --stone:        #E8E8E8;
+  --white:        #FFFFFF;
+  --charcoal:     #1F1F1F;
+  --text-primary:   rgba(255,255,255,0.92);
+  --text-secondary: rgba(255,255,255,0.55);
+  --text-muted:     rgba(255,255,255,0.35);
+  --panel:          rgba(18,58,111,0.30);
+  --panel-border:   rgba(198,167,94,0.18);
+  --green-stable:   #4A9E6B;
+  --amber-exposure: #C4944A;
+  --red-exposure:   #C45C5C;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: var(--navy);
+  color: var(--text-primary);
+  font-family: 'Inter', system-ui, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* ── Clerk sign-in overrides ──────────────────────────────────────────────── */
+.cl-rootBox {
+  width: 100%;
+}
+
+.cl-card {
+  background: var(--panel) !important;
+  border: 1px solid var(--panel-border) !important;
+  box-shadow: none !important;
+}
+
+.cl-headerTitle,
+.cl-headerSubtitle,
+.cl-formFieldLabel,
+.cl-footerActionText {
+  color: var(--text-primary) !important;
+}
+
+.cl-formButtonPrimary {
+  background: var(--gold) !important;
+  color: var(--navy) !important;
+  font-weight: 600 !important;
+}
+
+.cl-formFieldInput {
+  background: rgba(255,255,255,0.06) !important;
+  border-color: var(--panel-border) !important;
+  color: var(--text-primary) !important;
+}
