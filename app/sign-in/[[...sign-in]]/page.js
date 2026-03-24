@@ -4,7 +4,7 @@ export default function SignInPage() {
   return (
     <div style={{ minHeight:'100vh', display:'flex', flexDirection:'column', alignItems:'center', justifyContent:'center', background:'var(--navy)', padding:'40px 20px' }}>
       <div style={{ marginBottom:'40px', textAlign:'center' }}>
-        <img src="/logo.svg" alt="Valens" style={{ height:'56px', display:'block', margin:'0 auto 14px' }} />
+        <img src="/logo.png" alt="Valens" style={{ height:'90px', display:'block', margin:'0 auto 14px' }} />
         <div style={{ fontFamily:"'Playfair Display', serif", fontSize:'18px', fontWeight:500, letterSpacing:'0.14em', color:'var(--white)', textTransform:'uppercase' }}>
           Valens Intelligence
         </div>
